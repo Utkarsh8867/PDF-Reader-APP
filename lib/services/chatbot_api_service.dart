@@ -1,5 +1,3 @@
-
-
 import 'dart:convert';
 // ignore: depend_on_referenced_packages
 import 'package:http/http.dart' as http;
@@ -8,7 +6,7 @@ class ChatbotApiService {
   static const String _baseUrl =
       'https://api.groq.com/openai/v1/chat/completions';
   final String _apiKey =
-      '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'; // Replace with your actual API key
+      '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'; // Replace with your actual API key
 
   Future<String> fetchJEEAnswer(String userQuery) async {
     try {
@@ -24,7 +22,7 @@ class ChatbotApiService {
             {
               "role": "system",
               "content":
-                  "You are an AI chatbot that only provides information related to the JEE exam, its syllabus, and related questions. If a question is unrelated to JEE, respond with 'I only answer JEE-related questions.'",
+                  "give the answer of all questions in brief and in simple ways'",
             },
             {"role": "user", "content": userQuery},
           ],
