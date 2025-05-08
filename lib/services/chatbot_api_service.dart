@@ -6,7 +6,7 @@ class ChatbotApiService {
   static const String _baseUrl =
       'https://api.groq.com/openai/v1/chat/completions';
   final String _apiKey =
-      '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'; // Replace with your actual API key
+      ''; // Replace with your actual API key
 
   Future<String> fetchJEEAnswer(String userQuery) async {
     try {
